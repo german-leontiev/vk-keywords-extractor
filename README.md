@@ -1,6 +1,7 @@
 # vk-keywords-extractor
-This project helps to analyse vk pages, using vk API and [text2kewords keyword extractor](https://github.com/0x7o/text2keywords).
-It may be necessary to download [keyT5. Base (small) version](https://huggingface.co/0x7194633/keyt5-base) and [keyT5. Large version] (https://huggingface.co/0x7194633/keyt5-large) files to local machine
+This project helps to analyse vk pages, using vk API and [text2kewords keyword extractor](https://github.com/0x7o/text2keywords) \*.
+
+\**It may be necessary to download [keyT5. Base (small) version](https://huggingface.co/0x7194633/keyt5-base) and [keyT5. Large version] (https://huggingface.co/0x7194633/keyt5-large) files to local machine*
 
 ## Requirements
 You can install all necessary packages using `pip install -r requirements.txt`
