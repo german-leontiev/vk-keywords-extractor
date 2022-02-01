@@ -1,5 +1,5 @@
 # vk-keywords-extractor
-This project helps to analyse vk pages, using keyword extractor
+This project helps to analyse vk pages, using vk API and [text2kewords keyword extractor](https://github.com/0x7o/text2keywords).
 
 ## Requirements
 You can install all necessary packages using `pip install -r requirements.txt`
@@ -10,10 +10,13 @@ You can install all necessary packages using `pip install -r requirements.txt`
 * POSTS_NUMBER - number of posts to analyse (From 1 to 100)
 * USE_LARGE_MODEL - True / False parameters specifies wich model to use as a keyword extractor. *If True - increases quality but works slower*
 
+**It takes about 9 min to analyse 100 posts with large model and 3 min for base model**
+
 ## Example:
 `extractkw.py 1 100 True`
 
-Главные темы страницы:  ['социальные сети и сообщества', 'архитектура', 'разработка веб', 'архитектура архитектура', 'информационная безопасность']
+Returns:
+> Главные темы страницы:  ['социальные сети и сообщества', 'архитектура', 'разработка веб', 'архитектура архитектура', 'информационная безопасность']
 
-*Sctipt also creates .txt file containing main themes of analysing page*
+*Sctipt also creates .txt file containing main themes of analysing page in project folder*
 
