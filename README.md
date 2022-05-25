@@ -3,6 +3,9 @@ This project helps to analyse vk pages, using vk API and [text2kewords keyword e
 
 \**It may be necessary to download [keyT5. Base (small) version](https://huggingface.co/0x7194633/keyt5-base) and [keyT5. Large version] (https://huggingface.co/0x7194633/keyt5-large) files to local machine*
 
+IMPORTANT:
+You have to paste your VK API token in script here: `MAIN_TOKEN = "ENTER_YOUR_TOKEN_HERE"`
+
 ## Requirements
 You can install all necessary packages using `pip install -r requirements.txt`
 
