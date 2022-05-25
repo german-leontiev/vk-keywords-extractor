@@ -5,14 +5,16 @@ import torch
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 import sys
 
-def vk_auth(TOKEN='2d3e50e42d3e50e42d3e50e4ed2d4549ce22d3e2d3e50e44cc6cab80464ddd798590e4b'):
+MAIN_TOKEN = "ENTER_YOUR_TOKEN_HERE"
+
+def vk_auth(TOKEN=MAIN_TOKEN):
     session = vk.AuthSession(access_token=TOKEN)
     return vk.API(session)
 
 
 def get_posts(OWNER_ID,
               N_POSTS=100,
-              TOKEN='2d3e50e42d3e50e42d3e50e4ed2d4549ce22d3e2d3e50e44cc6cab80464ddd798590e4b'):
+              TOKEN=MAIN_TOKEN):
     # Авторизация в вк API по токену
     vk_api = vk_auth(TOKEN)
     # Получение постов со страницы
@@ -44,7 +46,7 @@ def get_keywords(OWNER_ID,
                  N_POSTS=100,
                  MODEL_LARGE=True,
                  TOP_N=5,
-                 TOKEN='2d3e50e42d3e50e42d3e50e4ed2d4549ce22d3e2d3e50e44cc6cab80464ddd798590e4b'):
+                 TOKEN=MAIN_TOKEN):
     
     # Получение постов со страницы
     wall_posts = get_posts(OWNER_ID=OWNER_ID,
